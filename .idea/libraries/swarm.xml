@@ -2,6 +2,7 @@
   <library name="swarm" type="mix">
     <CLASSES>
       <root url="file://$PROJECT_DIR$/_build/dev/lib/swarm/ebin" />
+      <root url="file://$PROJECT_DIR$/_build/test/lib/swarm/ebin" />
     </CLASSES>
     <SOURCES>
       <root url="file://$PROJECT_DIR$/deps/swarm/lib" />
