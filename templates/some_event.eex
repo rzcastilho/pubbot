@@ -1,0 +1,6 @@
+{
+  "id":"<%= UUID.uuid1(:hex) %>",
+  "event":"REQUEST",
+  "version":"1.0",
+  "date":"<%= Timex.now("America/Sao_Paulo") |> Timex.format!("%FT%T.%L", :strftime) %>"
+}

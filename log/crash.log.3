@@ -1,0 +1,58 @@
+2019-10-18 18:01:26 =ERROR REPORT====
+** Generic server tzdata_release_updater terminating 
+** Last message in was check_if_time_to_update
+** When Server state == []
+** Reason for termination ==
+** {badarg,[{ets,lookup_element,[hackney_config,mod_metrics,2],[]},{hackney_metrics,get_engine,0,[{file,"/Users/castilho/elixir/src/github.com/rzcastilho/pubbot/deps/hackney/src/hackney_metrics.erl"},{line,26}]},{hackney_connect,create_connection,5,[{file,"/Users/castilho/elixir/src/github.com/rzcastilho/pubbot/deps/hackney/src/hackney_connect.erl"},{line,78}]},{hackney_connect,connect,5,[{file,"/Users/castilho/elixir/src/github.com/rzcastilho/pubbot/deps/hackney/src/hackney_connect.erl"},{line,47}]},{hackney,request,5,[{file,"/Users/castilho/elixir/src/github.com/rzcastilho/pubbot/deps/hackney/src/hackney.erl"},{line,333}]},{'Elixir.Tzdata.HTTPClient.Hackney',head,3,[{file,"lib/tzdata/http_client/hackney.ex"},{line,17}]},{'Elixir.Tzdata.DataLoader',last_modified_of_latest_available,1,[{file,"lib/tzdata/data_loader.ex"},{line,46}]},{'Elixir.Tzdata.ReleaseUpdater','loaded_tzdata_matches_remote_last_modified?',0,[{file,"lib/tzdata/release_updater.ex"},{line,81}]}]}
+2019-10-18 18:01:26 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.Tzdata.ReleaseUpdater:init/1
+    pid: <0.1784.0>
+    registered_name: tzdata_release_updater
+    exception error: bad argument: [{ets,lookup_element,[hackney_config,mod_metrics,2],[]},{hackney_metrics,get_engine,0,[{file,"/Users/castilho/elixir/src/github.com/rzcastilho/pubbot/deps/hackney/src/hackney_metrics.erl"},{line,26}]},{hackney_connect,create_connection,5,[{file,"/Users/castilho/elixir/src/github.com/rzcastilho/pubbot/deps/hackney/src/hackney_connect.erl"},{line,78}]},{hackney_connect,connect,5,[{file,"/Users/castilho/elixir/src/github.com/rzcastilho/pubbot/deps/hackney/src/hackney_connect.erl"},{line,47}]},{hackney,request,5,[{file,"/Users/castilho/elixir/src/github.com/rzcastilho/pubbot/deps/hackney/src/hackney.erl"},{line,333}]},{'Elixir.Tzdata.HTTPClient.Hackney',head,3,[{file,"lib/tzdata/http_client/hackney.ex"},{line,17}]},{'Elixir.Tzdata.DataLoader',last_modified_of_latest_available,1,[{file,"lib/tzdata/data_loader.ex"},{line,46}]},{'Elixir.Tzdata.ReleaseUpdater','loaded_tzdata_matches_remote_last_modified?',0,[{file,"lib/tzdata/release_updater.ex"},{line,81}]}]
+    ancestors: [<0.1778.0>,<0.1777.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.1778.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 10958
+    stack_size: 27
+    reductions: 6822
+  neighbours:
+2019-10-18 18:01:26 =SUPERVISOR REPORT====
+     Supervisor: {<0.1778.0>,'Elixir.Supervisor.Default'}
+     Context:    child_terminated
+     Reason:     {badarg,[{ets,lookup_element,[hackney_config,mod_metrics,2],[]},{hackney_metrics,get_engine,0,[{file,"/Users/castilho/elixir/src/github.com/rzcastilho/pubbot/deps/hackney/src/hackney_metrics.erl"},{line,26}]},{hackney_connect,create_connection,5,[{file,"/Users/castilho/elixir/src/github.com/rzcastilho/pubbot/deps/hackney/src/hackney_connect.erl"},{line,78}]},{hackney_connect,connect,5,[{file,"/Users/castilho/elixir/src/github.com/rzcastilho/pubbot/deps/hackney/src/hackney_connect.erl"},{line,47}]},{hackney,request,5,[{file,"/Users/castilho/elixir/src/github.com/rzcastilho/pubbot/deps/hackney/src/hackney.erl"},{line,333}]},{'Elixir.Tzdata.HTTPClient.Hackney',head,3,[{file,"lib/tzdata/http_client/hackney.ex"},{line,17}]},{'Elixir.Tzdata.DataLoader',last_modified_of_latest_available,1,[{file,"lib/tzdata/data_loader.ex"},{line,46}]},{'Elixir.Tzdata.ReleaseUpdater','loaded_tzdata_matches_remote_last_modified?',0,[{file,"lib/tzdata/release_updater.ex"},{line,81}]}]}
+     Offender:   [{pid,<0.1784.0>},{id,'Elixir.Tzdata.ReleaseUpdater'},{mfargs,{'Elixir.Tzdata.ReleaseUpdater',start_link,[]}},{restart_type,permanent},{shutdown,5000},{child_type,worker}]
+
+2019-10-18 23:36:16 =ERROR REPORT====
+** Generic server tzdata_release_updater terminating 
+** Last message in was check_if_time_to_update
+** When Server state == []
+** Reason for termination ==
+** {badarg,[{ets,lookup_element,[hackney_config,mod_metrics,2],[]},{hackney_metrics,get_engine,0,[{file,"/Users/castilho/elixir/src/github.com/rzcastilho/pubbot/deps/hackney/src/hackney_metrics.erl"},{line,26}]},{hackney_connect,create_connection,5,[{file,"/Users/castilho/elixir/src/github.com/rzcastilho/pubbot/deps/hackney/src/hackney_connect.erl"},{line,78}]},{hackney_connect,connect,5,[{file,"/Users/castilho/elixir/src/github.com/rzcastilho/pubbot/deps/hackney/src/hackney_connect.erl"},{line,47}]},{hackney,request,5,[{file,"/Users/castilho/elixir/src/github.com/rzcastilho/pubbot/deps/hackney/src/hackney.erl"},{line,333}]},{'Elixir.Tzdata.HTTPClient.Hackney',head,3,[{file,"lib/tzdata/http_client/hackney.ex"},{line,17}]},{'Elixir.Tzdata.DataLoader',last_modified_of_latest_available,1,[{file,"lib/tzdata/data_loader.ex"},{line,46}]},{'Elixir.Tzdata.ReleaseUpdater','loaded_tzdata_matches_remote_last_modified?',0,[{file,"lib/tzdata/release_updater.ex"},{line,81}]}]}
+2019-10-18 23:36:16 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.Tzdata.ReleaseUpdater:init/1
+    pid: <0.230.0>
+    registered_name: tzdata_release_updater
+    exception error: bad argument: [{ets,lookup_element,[hackney_config,mod_metrics,2],[]},{hackney_metrics,get_engine,0,[{file,"/Users/castilho/elixir/src/github.com/rzcastilho/pubbot/deps/hackney/src/hackney_metrics.erl"},{line,26}]},{hackney_connect,create_connection,5,[{file,"/Users/castilho/elixir/src/github.com/rzcastilho/pubbot/deps/hackney/src/hackney_connect.erl"},{line,78}]},{hackney_connect,connect,5,[{file,"/Users/castilho/elixir/src/github.com/rzcastilho/pubbot/deps/hackney/src/hackney_connect.erl"},{line,47}]},{hackney,request,5,[{file,"/Users/castilho/elixir/src/github.com/rzcastilho/pubbot/deps/hackney/src/hackney.erl"},{line,333}]},{'Elixir.Tzdata.HTTPClient.Hackney',head,3,[{file,"lib/tzdata/http_client/hackney.ex"},{line,17}]},{'Elixir.Tzdata.DataLoader',last_modified_of_latest_available,1,[{file,"lib/tzdata/data_loader.ex"},{line,46}]},{'Elixir.Tzdata.ReleaseUpdater','loaded_tzdata_matches_remote_last_modified?',0,[{file,"lib/tzdata/release_updater.ex"},{line,81}]}]
+    ancestors: [<0.224.0>,<0.223.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.224.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 10958
+    stack_size: 27
+    reductions: 7534
+  neighbours:
+2019-10-18 23:36:16 =SUPERVISOR REPORT====
+     Supervisor: {<0.224.0>,'Elixir.Supervisor.Default'}
+     Context:    child_terminated
+     Reason:     {badarg,[{ets,lookup_element,[hackney_config,mod_metrics,2],[]},{hackney_metrics,get_engine,0,[{file,"/Users/castilho/elixir/src/github.com/rzcastilho/pubbot/deps/hackney/src/hackney_metrics.erl"},{line,26}]},{hackney_connect,create_connection,5,[{file,"/Users/castilho/elixir/src/github.com/rzcastilho/pubbot/deps/hackney/src/hackney_connect.erl"},{line,78}]},{hackney_connect,connect,5,[{file,"/Users/castilho/elixir/src/github.com/rzcastilho/pubbot/deps/hackney/src/hackney_connect.erl"},{line,47}]},{hackney,request,5,[{file,"/Users/castilho/elixir/src/github.com/rzcastilho/pubbot/deps/hackney/src/hackney.erl"},{line,333}]},{'Elixir.Tzdata.HTTPClient.Hackney',head,3,[{file,"lib/tzdata/http_client/hackney.ex"},{line,17}]},{'Elixir.Tzdata.DataLoader',last_modified_of_latest_available,1,[{file,"lib/tzdata/data_loader.ex"},{line,46}]},{'Elixir.Tzdata.ReleaseUpdater','loaded_tzdata_matches_remote_last_modified?',0,[{file,"lib/tzdata/release_updater.ex"},{line,81}]}]}
+     Offender:   [{pid,<0.230.0>},{id,'Elixir.Tzdata.ReleaseUpdater'},{mfargs,{'Elixir.Tzdata.ReleaseUpdater',start_link,[]}},{restart_type,permanent},{shutdown,5000},{child_type,worker}]
+
