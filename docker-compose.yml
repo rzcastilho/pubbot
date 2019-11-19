@@ -1,0 +1,15 @@
+version: '3'
+services:
+  pubbot:
+    build: .
+    volumes:
+      - $PWD/templates:/app/templates
+      - $PWD/config/releases.exs:/app/prod/rel/pubbot/releases/0.1.0/releases.exs
+    depends_on:
+      - rabbitmq
+  rabbitmq:
+    image: rabbitmq:management
+    ports:
+      - 5672
+      - 15672:15672
+

@@ -1,6 +1,6 @@
 use Mix.Config
 
-config :logger, level: :debug
+config :logger, level: :info
 
 config :pubbot, Pubbot.Scheduler,
   jobs: [
@@ -12,10 +12,10 @@ config :pubbot, Pubbot.Scheduler,
         :publish,
         [
           [username: "guest", password: "guest", virtual_host: "/", host: "localhost", port: 5672],
-          "amqp.notificacao",
+          "event.exchange",
           "",
           [content_type: "application/json"],
-          "templates/some_event.eex"
+          "templates/event.eex"
         ]
       }
     },
@@ -28,7 +28,7 @@ config :pubbot, Pubbot.Scheduler,
         [
           [username: "guest", password: "guest", virtual_host: "/", host: "localhost", port: 5672],
           "",
-          "source.ofertas.colaborar.campus",
+          "hello.queue",
           [content_type: "application/json"],
           "templates/hello.eex",
           [name: "Pubbot"]

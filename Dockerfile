@@ -24,7 +24,7 @@ ENV LANG=C.UTF-8
 
 RUN apk --no-cache update && \
     apk --no-cache upgrade && \
-    apk --no-cache add ncurses-dev openssl-dev
+    apk --no-cache add ncurses-dev openssl-dev tzdata busybox-extras
 
 WORKDIR /app
 COPY templates ./templates
